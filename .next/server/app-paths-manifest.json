@@ -1,0 +1,9 @@
+{
+  "/auth/login/page": "app/auth/login/page.js",
+  "/page": "app/page.js",
+  "/guest/search/page": "app/guest/search/page.js",
+  "/guest/hotel/[id]/page": "app/guest/hotel/[id]/page.js",
+  "/guest/booking/page": "app/guest/booking/page.js",
+  "/guest/dashboard/page": "app/guest/dashboard/page.js",
+  "/guest/booking/[id]/page": "app/guest/booking/[id]/page.js"
+}

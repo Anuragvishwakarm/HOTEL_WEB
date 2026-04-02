@@ -167,7 +167,7 @@ export default function ReportsPage() {
           <div className="h-44 skeleton" />
         ) : (
           <ResponsiveContainer width="100%" height={180}>
-            <BarChart data={occupancyChart.filter((_, i) => i % Math.max(1, Math.floor(occupancyChart.length / 30)) === 0)}>
+            <BarChart data={occupancyChart.filter((_: unknown, i: number) => i % Math.max(1, Math.floor(occupancyChart.length / 30)) === 0)}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
               <XAxis dataKey="date" tick={{ fontSize: 10, fill: "#94a3b8" }} tickLine={false} axisLine={false} interval="preserveStartEnd" />
               <YAxis tick={{ fontSize: 10, fill: "#94a3b8" }} tickLine={false} axisLine={false} domain={[0, 100]} tickFormatter={v => `${v}%`} />

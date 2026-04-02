@@ -57,8 +57,8 @@ export default function SettingsPage() {
         email:          hotel.email ?? "",
         check_in_time:  hotel.check_in_time,
         check_out_time: hotel.check_out_time,
-        gst_number:     (hotel as any).gst_number ?? "",
-        pan_number:     (hotel as any).pan_number ?? "",
+        gst_number:     hotel.gst_number ?? "",
+        pan_number:     hotel.pan_number ?? "",
       });
       setSelectedAmenities(hotel.amenities ?? []);
     }

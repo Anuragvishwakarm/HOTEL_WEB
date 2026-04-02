@@ -143,7 +143,7 @@ export default function StaffPage() {
           </Button>
         </div>
       ) : (
-        <Table data={staffList} columns={columns} />
+        <Table data={staffList} columns={columns} keyExtractor={(r: any) => r.id} />
       )}
 
       {/* Add Staff Modal */}

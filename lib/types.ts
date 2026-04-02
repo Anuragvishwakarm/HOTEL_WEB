@@ -47,6 +47,8 @@ export interface Hotel {
   is_verified: boolean;
   created_at: string;
   min_price?: number;   // cheapest room type base_price per night
+  gst_number?: string;
+  pan_number?: string;
 }
 
 export interface RoomType {
